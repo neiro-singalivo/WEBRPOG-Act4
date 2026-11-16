@@ -4,7 +4,7 @@
 
 /* Phone frame Styling because I originally made my design in canva */
 .phone-frame {
-  margin-left: 400px;
+  margin: 0 auto;
   width: 320px;
   height: 640px;
   border: 14px solid #1e1e1e;
@@ -20,5 +20,68 @@
 .phone-screen {
   width: 100%;
   height: 100%;
-  overflow-y: auto;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 84px auto 0;
+  object-fit: cover;
+  border: 20px solid #fff;
+  border-radius: 42px;
+  box-sizing: border-box;
+}
+
+.phone-screen h2 {
+  color: #0b2a4a;
+  text-align: center;
+
+  margin-top: 30px;
+}
+
+.phone-screen h1 {
+  color: #0b2a4a;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.details {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  height: 40px;
+  border-radius: 12px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-align: left;
+}
+
+.buttondsgn {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #0b2a4a;
+  color: #fff;
+  font-size: 14px;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+form:invalid button[type="submit"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+form:valid button[type="submit"] {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
 }
