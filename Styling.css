@@ -1,0 +1,24 @@
+.defaultbg {
+  background-color: #1b3356;
+}
+
+/* Phone frame Styling because I originally made my design in canva */
+.phone-frame {
+  margin-left: 400px;
+  width: 320px;
+  height: 640px;
+  border: 14px solid #1e1e1e;
+  border-radius: 40px;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.25),
+    0 0 0 2px #4a4a4a;
+  overflow: hidden;
+  position: relative;
+  background-color: #395784;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
