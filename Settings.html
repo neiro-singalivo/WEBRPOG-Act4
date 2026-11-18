@@ -31,15 +31,7 @@
         <div class="profile-layout">
           <i class="fa-solid fa-user profile rounded-circle"></i>
           <div class="profile-info">
-            <h1
-              style="
-                color: white;
-                margin: 0;
-                font-size: 18px;
-              "
-            >
-              User
-            </h1>
+            <h1 style="color: white; margin: 0; font-size: 18px">User</h1>
             <p
               style="
                 margin: 2px 0 0;
@@ -53,6 +45,172 @@
             <div class="profile-actions">
               <p style="color: white; font-size: 8px">Change Photo</p>
               <p style="color: white; font-size: 8px">Change username</p>
+            </div>
+          </div>
+        </div>
+        <div class="settings-scroll">
+          <!-- THEME -->
+          <div class="card settings-card mb-3">
+            <div
+              class="card-header schedule-title d-flex justify-content-between small py-2"
+            >
+              <span class="fw-bold">Change Theme</span>
+              <span>Navy</span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <button
+                  type="button"
+                  class="btn rounded-circle swatch active"
+                  style="background: #003478"
+                ></button>
+                <button
+                  type="button"
+                  class="btn rounded-circle swatch"
+                  style="background: #e53946"
+                ></button>
+                <button
+                  type="button"
+                  class="btn rounded-circle swatch"
+                  style="background: #ffd95a"
+                ></button>
+                <button
+                  type="button"
+                  class="btn rounded-circle swatch"
+                  style="background: #2e6b1f"
+                ></button>
+                <button
+                  type="button"
+                  class="btn rounded-circle swatch"
+                  style="background: #ff9f4a"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- REMINDER LEAD TIME -->
+          <p class="text-white-50 small mb-1">Reminder lead time</p>
+          <div class="card settings-card mb-2">
+            <div class="card-body py-2">
+              <label for="acad" class="form-label small mb-0"
+                >Academic
+                <span class="text-secondary">3 days ahead</span></label
+              >
+              <input
+                type="range"
+                class="form-range"
+                min="0"
+                max="7"
+                value="3"
+                id="acad"
+              />
+            </div>
+          </div>
+          <div class="card settings-card mb-2">
+            <div class="card-body py-2">
+              <label for="work" class="form-label small mb-0"
+                >Work <span class="text-secondary">1 day ahead</span></label
+              >
+              <input
+                type="range"
+                class="form-range"
+                min="0"
+                max="7"
+                value="1"
+                id="work"
+              />
+            </div>
+          </div>
+          <div class="card settings-card mb-3">
+            <div class="card-body py-2">
+              <label for="pers" class="form-label small mb-0"
+                >Personal
+                <span class="text-secondary">0 days ahead</span></label
+              >
+              <input
+                type="range"
+                class="form-range"
+                min="0"
+                max="7"
+                value="0"
+                id="pers"
+              />
+            </div>
+          </div>
+
+          <!-- PREFERENCES -->
+          <p class="text-white-50 small mb-1">Preferences</p>
+          <div class="card settings-card mb-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div
+                  class="form-check form-switch ps-0 d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <div class="small fw-semibold">Conflict alerts</div>
+                    <small class="text-secondary"
+                      >Warn when two commitments overlap</small
+                    >
+                  </div>
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    role="switch"
+                    checked
+                  />
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div
+                  class="form-check form-switch ps-0 d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <div class="small fw-semibold">Daily priority digest</div>
+                    <small class="text-secondary"
+                      >One summary each morning</small
+                    >
+                  </div>
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    role="switch"
+                    checked
+                  />
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div
+                  class="form-check form-switch ps-0 d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <div class="small fw-semibold">Low-effort mode</div>
+                    <small class="text-secondary"
+                      >Fewer prompts, minimal upkeep</small
+                    >
+                  </div>
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    role="switch"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ACCOUNT -->
+          <p class="text-white-50 small mb-1">Account</p>
+          <div class="card settings-card mb-4">
+            <div
+              class="card-body py-2 d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <div class="small fw-semibold">Not you?</div>
+                <small class="text-secondary"
+                  >Your tasks stay saved. Log back in anytime</small
+                >
+              </div>
+              <a href="index.html" class="small">Switch user</a>
             </div>
           </div>
         </div>
@@ -79,9 +237,6 @@
             </div>
           </nav>
         </section>
-        <a href="Task.html" class="btn btn-add rounded-circle">
-          <i class="fa-solid fa-plus fs-5 add-task"></i>
-        </a>
       </div>
     </div>
     <script

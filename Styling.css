@@ -243,3 +243,33 @@ form:valid button[type="submit"] {
 .profile-actions p {
   margin: 8px 0 0;
 }
+
+.settings-scroll {
+  height: 360px;
+  overflow-y: auto;
+  padding: 0 16px;
+}
+.settings-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.swatch {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 2px solid #dee2e6;
+}
+.swatch.active {
+  border: 3px solid #0b2a4a;
+}
+.form-check-input:checked {
+  background-color: #14b8c8;
+  border-color: #14b8c8;
+}
+
+.phone-screen .task-sheet {
+  position: absolute;
+  height: auto;
+  border-radius: 28px 28px 0 0;
+}
