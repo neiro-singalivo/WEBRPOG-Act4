@@ -196,3 +196,22 @@ form:valid button[type="submit"] {
 .cal-head {
   background-color: #00357a;
 }
+
+.btn-add {
+  position: absolute;
+  right: 20px;
+  bottom: 130px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: #14b8c8;
+  border: none;
+  box-shadow: 0 8px 20px rgba(20, 184, 200, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-task {
+  color: white;
+}
